@@ -1,0 +1,311 @@
+body {
+  --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --color: #191e4b;
+    background-color: var(--color);
+    background-image: url('bg4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    font-family: var(--font);
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  background-color:#ffffffb9;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 80%;
+    display: inline-block;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav i {
+    font-size: 30px;
+  }
+  
+  .topnav a.active {
+    background-color: var(--color);
+    color: white;
+  }
+
+  .wallpaper {width: 224px;}
+
+  .stuff {
+    overflow-y: scroll;
+    height:400px;
+    width: 30%;
+    border: 1px solid #000000;
+    display: inline-block;
+  }
+
+  .social {
+    overflow-y: scroll;
+    height:400px;
+    width: 30%;
+    border: 1px solid #000000;
+    display: inline-block;
+  }
+
+  .social a {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 16px 16px;
+    width: 89%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .social i {font-size: 20px;}
+
+  .stuff a {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .stuff img {
+    width: 53px;
+    height: 53px;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: white; 
+    color: black; 
+  }
+
+  .videolink {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left:5px
+  }
+
+  .videolink video {
+    width: 300px;
+    height: 170px;
+  }
+
+  .videolink h3 {
+    font-size: medium;
+    width: 80%;
+  }
+
+  .multiline {white-space: pre-wrap;}
+
+  /* Only for the admin panel */
+
+  .adminbody {margin: 0;}
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: var(--color);
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 16px;
+    height: 1000px;
+    color: white;
+  }
+
+  .logoadmin {
+    margin: auto;
+    padding: 20px;
+  }
+
+    /* Only for the admin panel */
+
+  .twitter {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .twitter .pfp {
+    width: 90px;
+    border-radius: 50%;
+  }
+
+  .twitter .username {
+    display: inline-block;
+  }
+
+  .twitter .text {
+    word-break: break-all;
+    white-space: pre-line;
+  }
+
+  .twitterbutton {
+    background-color: var(--color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--font);
+    border-radius: 20px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: var(--color);
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: var(--color);
+  color: white;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.button {
+  background-color: var(--color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-family: var(--font);
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--color);
+}
